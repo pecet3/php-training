@@ -1,18 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form training</title>
+</head>
+
+<body>
+    <form action="index.php" method="get">
+        <label>username: </label><br>
+        <input type="text" name="username"><br>
+        <label>password: </label><br>
+        <input type="password" name="password"><br>
+        <input type="submit" value="log in">
+    </form>
+</body>
+
+</html>
+
 <?php
-$name = "kuba";
-
-$age = 24;
-
-$gpa = 2.5;
-
-$price = 4.99;
-$quantity = 2;
-echo $name, "<br>";
-echo "hello {$name} <br>";
-echo "you are {$age} old";
-
-echo "your gpa is {$gpa} <br>";
-
-echo "your pizza is \${$price} <br>";
-$total = $quantity * $price;
-echo "total price is \${$total}";
+echo $_GET["username"];
+echo $_GET["password"];
+?>
