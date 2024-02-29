@@ -1,19 +1,18 @@
 <?php
-echo "hello world <br>";
-echo "hello mom";
+$name = "kuba";
 
-?>
-<!DOCTYPE html>
-<html lang="en">
+$age = 24;
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+$gpa = 2.5;
 
-<body>
-    <button>Order pizza</button>
-</body>
+$price = 4.99;
+$quantity = 2;
+echo $name, "<br>";
+echo "hello {$name} <br>";
+echo "you are {$age} old";
 
-</html>
+echo "your gpa is {$gpa} <br>";
+
+echo "your pizza is \${$price} <br>";
+$total = $quantity * $price;
+echo "total price is \${$total}";
