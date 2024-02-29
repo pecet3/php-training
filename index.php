@@ -20,6 +20,6 @@
 </html>
 
 <?php
-echo $_GET["username"];
-echo $_GET["password"];
+echo "{$_GET["username"]}" . "<br>";
+echo "{$_GET["password"]}";
 ?>
