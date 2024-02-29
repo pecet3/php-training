@@ -8,18 +8,24 @@
 </head>
 
 <body>
-    <form action="index.php" method="get">
-        <label>username: </label><br>
-        <input type="text" name="username"><br>
-        <label>password: </label><br>
-        <input type="password" name="password"><br>
-        <input type="submit" value="log in">
+    <form action="index.php" method="post">
+        <label>quantity </label><br>
+        <input type="number" name="quantity"><br>
+        <input type="submit" value="total">
     </form>
 </body>
 
 </html>
 
 <?php
-echo "{$_GET["username"]}" . "<br>";
-echo "{$_GET["password"]}";
+$item = "pizza";
+$price = 5.99;
+$quantity = $_POST["quantity"];
+
+$total = null;
+
+$total = abs($quantity);
+
+// echo "you have ordered {$quantity} x {$item}/s";
+echo "total is {$total}";
 ?>
